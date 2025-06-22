@@ -1,0 +1,501 @@
+/* ==============================
+   FUENTES PERSONALIZADAS
+   ============================== */
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/pacifico/pacifico-v22-latin-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/poppins-v20-latin-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/poppins-v20-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==============================
+   ESTILOS GENERALES
+   ============================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+}
+
+/* Hero Section */
+.hero {
+  background: #FFF5E1;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #8B4513;
+}
+
+/* Titulares */
+h2 {
+  color: #8B4513;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Navegación */
+.nav-link {
+  font-weight: 500;
+}
+
+/* ==============================
+   FOOTERS
+   ============================== */
+/* Footer principal (página inicio) */
+.footer {
+  background-color: #8B4513;
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 2rem 0;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .container {
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #ffdcb2;
+}
+
+/* Footer secundario */
+.footer.secondary {
+  background: linear-gradient(135deg, #FFA07A 0%, #FFDAB9 100%);
+  color: #5a3921;
+  padding: 2rem 0;
+  min-height: 160px;
+  box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid #FF8C69;
+}
+
+.footer.secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FF8C69, #FF6347);
+}
+
+.footer.secondary p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.footer.secondary a {
+  color: #5a3921;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px dashed #FF8C69;
+}
+
+.footer.secondary a:hover {
+  color: #3a2414;
+  border-bottom-color: #FF6347;
+}
+
+/* Íconos sociales (comunes) */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Íconos específicos footer secundario */
+.footer.secondary .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border-bottom: none;
+  color: #5a3921 !important;
+}
+
+.footer.secondary .social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  color: #8B4513 !important;
+}
+
+.footer.secondary .social-icons i {
+  font-size: 1.25rem;
+}
+
+/* Íconos sociales */
+.social-icons a {
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* ==============================
+   GALERÍA MEJORADA
+   ============================== */
+#galeria {
+  background-color: #fff9f2;
+}
+
+.gallery-item {
+  transition: all 0.3s ease;
+  height: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(139, 69, 19, 0.9);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  padding: 15px;
+}
+
+.gallery-caption h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.gallery-caption p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.gallery-item:hover .gallery-caption {
+  transform: translateY(0);
+}
+
+.gallery-item:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+/* Efecto de polaroid */
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botón Ver Más */
+.btn-outline-brown {
+  color: #8B4513;
+  border-color: #8B4513;
+}
+
+.btn-outline-brown:hover {
+  color: white;
+  background-color: #8B4513;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-img {
+    height: 150px;
+  }
+  
+  .gallery-caption {
+    padding: 10px !important;
+  }
+  
+  .gallery-caption h5 {
+    font-size: 0.9rem;
+  }
+  
+  .gallery-caption p {
+    display: none;
+  }
+}
+
+/* Modal */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ==============================
+   HEADER PRINCIPAL (PÁGINA INICIO)
+   ============================== */
+.custom-header {
+  background-color: #8B4513 !important;
+}
+
+.custom-header .nav-link,
+.custom-header .navbar-brand {
+  color: #fff !important;
+}
+
+.custom-header .nav-link:hover,
+.custom-header .navbar-brand:hover {
+  color: #ffdcb2 !important;
+}
+
+/* Ícono hamburguesa */
+.custom-header .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ==============================
+   HEADER SECUNDARIO (CHOCBOMBA, PEANUT DREAM, BERRY COOKIE, CONTACTO)
+   ============================== */
+.custom-header.secondary {
+  background-color: #FFDAB9 !important;
+}
+
+.custom-header.secondary .nav-link,
+.custom-header.secondary .navbar-brand {
+  color: #5a3921 !important;
+}
+
+.custom-header.secondary .nav-link:hover,
+.custom-header.secondary .navbar-brand:hover {
+  color: #8B4513 !important;
+}
+
+/* Footer para páginas secundarias */
+.footer.secondary {
+  background-color: #FFDAB9 !important;
+  color: #5a3921 !important;
+}
+
+.footer.secondary a {
+  color: #5a3921 !important;
+}
+
+.footer.secondary a:hover {
+  color: #8B4513 !important;
+}
+
+/* ==============================
+   CARRUSEL DE MARCAS - DOLCE MARGHERITA
+   ============================== */
+.carrusel-marcas {
+  background-color: #fff8f0;
+  border-top: 2px dashed #caa178;
+  border-bottom: 2px dashed #caa178;
+  overflow: hidden;
+}
+
+.text-brown {
+  color: #8b5e3c;
+  font-family: 'Georgia', serif;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(240px * 12);
+  animation: scroll 30s linear infinite;
+}
+
+.slide {
+  width: 240px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: all 0.4s ease;
+}
+
+.slide img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* ==============================
+   ESTILOS DE TESTIMONIOS
+   ============================== */
+#comentarios-lista blockquote {
+  background-color: #fff3e6;
+  border-left: 5px solid #8B4513;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#comentarios-lista blockquote p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#comentarios-lista blockquote footer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Ajustar el espaciado general */
+#comentarios-lista {
+  margin-top: 2rem;
+}
+
+main {
+  background-color: #fffaf2;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.btn-primary {
+  background-color: #8B4513;
+  border-color: #8B4513;
+}
+.btn-primary:hover {
+  background-color: #A0522D;
+  border-color: #A0522D;
+}
+
+.form-label {
+  color: #8B4513;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #caa178;
+}
+.form-control:focus {
+  border-color: #8B4513;
+  box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Carrusel de Productos */
+.producto-img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.producto-img:hover {
+  filter: grayscale(0%);
+}
+
+/* Ajusta el tamaño de la imagen si hace falta */
+.producto-card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ==============================
+   AJUSTE VISUAL PARA LAS PESTAÑAS SECUNDARIAS
+   ============================== */
+.custom-header.secondary {
+  position: relative;
+  background-color: #FFA07A !important;
+  border-top: 10px solid #FFDAB9;
+  border-bottom: 10px solid #FFDAB9;
+}
